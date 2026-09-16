@@ -1,0 +1,7 @@
+# Copy this file to config.py and replace the placeholders.
+# Never commit config.py — it is gitignored.
+
+flask_secret_key = 'a-long-random-string-for-session-signing'
+box_client_id = 'YOUR_BOX_CLIENT_ID'
+box_client_secret = 'YOUR_BOX_CLIENT_SECRET'
+box_enterprise_id = 'YOUR_BOX_ENTERPRISE_ID'
