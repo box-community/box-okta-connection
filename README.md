@@ -138,7 +138,7 @@ running. Both hold secrets and are gitignored.
    In the Admin Console, go to **Directory** > **People** > **Add person**.
    Enter a first name, last name, and username in email format — Okta
    combines first and last name into the `name` claim used for the Box
-   user's name. For **Password**, select **Set by admin**, enter a
+   user's name. For **Password**, select **I will set password**, enter a
    password, and clear **User must change password on first login**.
 
    If you narrowed **Assignments**, open the integration's **Assignments**
@@ -188,8 +188,12 @@ running. Both hold secrets and are gitignored.
 
 ## Run
 
+Activate the virtual environment first, then start Flask through Python so
+the `flask` executable does not need to be on your `PATH`:
+
 ```bash
-env FLASK_APP=server.py flask run
+source .venv/bin/activate
+python -m flask --app server.py run
 ```
 
 Flask reports that it is running on `http://127.0.0.1:5000/`. Open that
