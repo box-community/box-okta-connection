@@ -262,7 +262,7 @@ app never needs its own mapping table.
 | A new Box user is created on every sign-in | Confirm `create_user` sets `external_app_user_id` to the `sub` claim and that `validate_user` searches for that same value. |
 | Acting as the user fails, even though the user exists | Enable **Generate user access tokens**, save, then reauthorize the app. |
 | `ModuleNotFoundError: config` | Copy `config.py.example` to `config.py` and fill in your Box credentials. |
-| `ModuleNotFoundError` for Flask or Box | Activate the venv: `source .venv/bin/activate`. Install with `pip install -r requirements.txt` (uses `boxsdk~=10` only — do not also install `box-sdk-gen`). |
+| `ModuleNotFoundError` for Flask or Box | Activate the venv: `source .venv/bin/activate`. Install with `pip install -r requirements.txt` (uses boxsdk only — do not also install `box-sdk-gen`). |
 
 ## Scaling to production
 
